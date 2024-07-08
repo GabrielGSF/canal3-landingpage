@@ -59,8 +59,7 @@ body{
 }
 
 .hero .content img {
-    width: 45%;
-    height: 70%;
+    width: 60%;
 }
 
 /* .hero .content video {
@@ -282,8 +281,7 @@ body{
         width: 100%;
     }
     .hero .content img {
-        height: 50%;
-        width: 70%;
+        width: 90%;
     }
 
     /* quem somos */
