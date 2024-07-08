@@ -66,3 +66,4 @@ carroselContainer.addEventListener('touchmove', (e) => {
     const walk = (x - startX) * 2; // Ajuste para a velocidade
     carroselContainer.scrollLeft = scrollLeft - walk;
 });
+
