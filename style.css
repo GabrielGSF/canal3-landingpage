@@ -245,34 +245,50 @@ html {
 
     }
     .parteBaixo .barra{
-        width: 75%;
+        width: 80%;
 
         display: flex;
         justify-content: center;
+        font-family: Kanit, sans-serif;
 
         margin-top: 100px;
     }
     .parteBaixo .restam .cronometro{
+        width: 75%;
         background-color: #ffffff;
+        color: #250d2a;
         border-radius: 100px 0px 0px 100px;
         
         display: flex;
         align-items: center;
+        justify-content: space-around;
     }
     .parteBaixo .restam .cronometro p{
         color: #250d2a;
+        font-size: 0.4rem;
 
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+        justify-content: center;
 
+    }
+    .parteBaixo .restam .cronometro p span{
+        font-size: 1.5rem;
+    }
     .parteBaixo .restam .desconto{
+        width: 25%;
         background-color: #d34a78;
+        color: #fff;
         border-radius: 0px 100px 100px 0px;
-        display: flex;
-    }
 
+        display: flex;
+        align-items: center;
+    }
+    .parteBaixo .restam .desconto p{
+        width: 50%;
+        font-size: 0.5rem;
+    }
 
 /* APOIO */
 
