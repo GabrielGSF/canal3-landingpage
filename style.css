@@ -60,26 +60,26 @@ html {
     width: 70%;
 }
 .hero .content .video p {
-    font-size: 1rem;
+    font-size: 3rem;
     color: #fff;
 }
 
 .hero .aliens {
     display: flex;
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     justify-content: left;
 
 }
 
 .hero .aliens img {
     position: absolute;
-    width: 25%;
+    width: 12%;
     z-index: 1;
     margin-top: -70px;
 }
 
-.quemSomos {
+.garantir {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -88,7 +88,7 @@ html {
     margin-top: 50px;
 }
 
-.quemSomos .quemSomosContent {
+.garantir .garantirContent {
     width: 90%;
     height: 100%;
     display: flex;
@@ -97,31 +97,42 @@ html {
     z-index: 1;
 }
 
-.quemSomos .quemSomosContent .sai {
+.garantir .garantirContent .sai {
     height: 90%;
     width: 50%;
     z-index: 2;
 }
 
-.quemSomos .quemSomosContent .contentText {
-    width: 45%;
+.garantir .garantirContent .content {
+    width: 70%;
     height: 90%;
     display: flex;
     align-items: start;
     flex-direction: column;
 }
 
-.quemSomos .quemSomosContent .contentText img {
-    width: 85%;
-    /* height: 40%; */
-
+.garantir .garantirContent .content .contentText {
+    display: block;
+    text-align: center;
 }
 
-.quemSomos .quemSomosContent .contentText p {
+.garantir .garantirContent .content .contentText img {
+    margin-top: 5rem;
+    width: 30%;
+}
+
+.garantir .garantirContent .content img {
+    width: 80%;
+}
+
+.garantir .garantirContent img {
+    width: 10%;
+}
+.garantir .garantirContent .content .contentText p {
     width: 85%;
     margin-top: 15px;
     font-family: 'kanit', Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 /* Parte atrações parabaixo */
@@ -143,10 +154,10 @@ html {
 
 .parteBaixo .atracoes {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
 
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
 
     position: relative;
@@ -169,10 +180,10 @@ html {
 }
 
 .parteBaixo .atracoes img {
-    width: 40%;
+    width: 30%;
 
     position: absolute;
-    margin-top: -4%
+    margin-top: -3%
 }
 
 /* garanta seus ingressor */
@@ -217,7 +228,7 @@ html {
 .carrosel {
     width: 100%;
 
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
 .carousel {
     height: 100%;
@@ -329,27 +340,6 @@ footer div p{
         width: 100%;
     }
 
-    .hero .menu {
-        display: flex;
-        width: 100%;
-        height: 15%;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .hero .menu img {
-        margin-left: 0;
-    }
-
-    .hero .menu .links {
-        display: flex;
-        justify-content: center;
-        width: 70%;
-        justify-content: space-between;
-
-    }
-
     .hero .content {
         display: flex;
         flex-direction: column;
@@ -360,10 +350,15 @@ footer div p{
         width: 90%;
     }
 
+    .hero .content .video p {
+        font-size: 3rem;
+        color: #fff;
+    }
+
     /* quem somos */
     .quemSomos {
         width: 100%;
-        height: auto;
+        height: 100vh;
     }
 
     .quemSomos .quemSomosContent {
