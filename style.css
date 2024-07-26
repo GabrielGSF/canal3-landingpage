@@ -24,33 +24,6 @@ html {
     background-image: url('./assets/01\ -\ Background.png');
     background-size: 100% 100%;
 }
-/* 
-.hero .menu {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-    height: 84px;
-    border-bottom: 1px solid #CCCCCC;
-}
-
-.hero .menu img {
-    height: 70%;
-    margin-left: 20px;
-}
-
-.hero .menu .links {
-    display: flex;
-    width: 30%;
-    justify-content: space-around;
-}
-
-.hero .menu .links a {
-    text-decoration: none;
-    color: #CCCCCC;
-    font-family: 'Kanit', Arial, Helvetica, sans-serif;
-} */
 
 .hero .content {
     width: 90%;
@@ -63,14 +36,32 @@ html {
 
 .hero .content .logo {
     width: 50%;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.hero .content .logo .logoCanal3 {
+    width: 70%;
+}
+.hero .content .logo .start {
+    width: 30%;
 }
 
-.hero .content .logo img {
-    width: 100%;
+.hero .content .video {
+    /* background-color: palevioletred; */
+    width: 50%;
+    /* height: 75%; */
+    display: block;
+    align-items: center;
+    text-align: center;
 }
 
 .hero .content .video img {
-    width: 60%;
+    width: 70%;
+}
+.hero .content .video p {
+    font-size: 16em;
+    color: #fff;
 }
 
 /* .hero .content video {
@@ -135,7 +126,7 @@ html {
     width: 85%;
     margin-top: 15px;
     font-family: 'kanit', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 4rem;
 }
 
 /* Parte atrações parabaixo */
@@ -223,8 +214,8 @@ html {
 
     color: #fff;
     font-family: Kanit, sans-serif;
-    line-height: 25px;
-    font-size: 1.1rem;
+    /* line-height: 25px; */
+    font-size: 4rem;
 }
 
 /* Carrosel */
