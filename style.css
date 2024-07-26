@@ -24,7 +24,7 @@ html {
     background-image: url('./assets/01\ -\ Background.png');
     background-size: 100% 100%;
 }
-
+/* 
 .hero .menu {
     display: flex;
     flex-direction: row;
@@ -50,7 +50,7 @@ html {
     text-decoration: none;
     color: #CCCCCC;
     font-family: 'Kanit', Arial, Helvetica, sans-serif;
-}
+} */
 
 .hero .content {
     width: 90%;
@@ -61,7 +61,15 @@ html {
 
 }
 
-.hero .content img {
+.hero .content .logo {
+    width: 50%;
+}
+
+.hero .content .logo img {
+    width: 100%;
+}
+
+.hero .content .video img {
     width: 60%;
 }
 
@@ -182,6 +190,14 @@ html {
 }
 
 /* garanta seus ingressor */
+.parteBaixo a {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.parteBaixo a img {
+    width: 100%;
+}
 
 .parteBaixo img {
     width: 65%;
