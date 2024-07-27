@@ -4,8 +4,7 @@ $('.carousel').slick({
     arrows:false,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 2,
-
+    slidesToScroll: 3,
 });
 
 const second = 1000;
