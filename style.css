@@ -505,9 +505,9 @@ footer div p{
     }
 
     /* Carrosel */ 
-    .parteBaixo .carrosel .carousel{
+    /* .parteBaixo .carrosel .carousel{
         width: 550px; 
-    }
+    } */
     .parteBaixo .carrosel .carousel .espaco{
         display: none;
     }
