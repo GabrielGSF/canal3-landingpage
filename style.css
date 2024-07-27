@@ -314,11 +314,12 @@ html {
         font-weight: bold;
     }
     .parteBaixo .restam .desconto{
-        width: 30%;
+        width: 20%;
         background-color: #d34a78;
         color: #fff;
         border-radius: 0px 100px 100px 0px;
         padding-left: 5px;
+        font-size: 1.2rem;
 
         display: flex;
         align-items: center;
@@ -429,6 +430,8 @@ footer div p{
 
         display: flex;
         align-items: center;
+
+        margin-top: 20px;
     }
     .garantir .garantirContent .content .contentText{
         width: 100%;
@@ -437,7 +440,7 @@ footer div p{
         align-items: center;
     }
     .garantir .garantirContent .content .contentText img{
-        width: 80%;
+        width: 70%;
         margin: 30px;
     }
     /* quem somos */
@@ -483,30 +486,38 @@ footer div p{
     }
 
     .parteBaixo .querSaber img {
-        width: 80%;
+        width: 90%;
         margin-bottom: 15px;
     }
 
     .parteBaixo .querSaber p {
-        width: 80%;
-
+        width: 90%;
         margin-top: 5px;
     }
 
-    /* Carrosel */
+    /* Carrosel */ 
+    .parteBaixo .carrosel .carousel{
+        width: 550px; 
+    }
+    .parteBaixo .carrosel .carousel .espaco{
+        display: none;
+    }
+    .parteBaixo .carrosel .carousel div img{
+        width: 93%;
+    }
     .carrosel {
         margin-bottom: 20px;
     }
 
-    .card {
+    /* .card {
         width: 70;
         height: 370px;
-    }
+    } */
 
-    #espaco {
+    /* #espaco {
         width: 50px;
         background-color: rgba(240, 248, 255, 0);
-    }
+    } */
 
     /* footer */
     footer{
