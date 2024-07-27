@@ -266,7 +266,7 @@ html {
     .parteBaixo .restam .cronometro p{
         height: auto;
         color: #250d2a;
-        font-size: 0.5rem;
+        font-size: 0.4rem;
 
         display: flex;
         flex-direction: column;
@@ -342,19 +342,37 @@ footer div p{
         flex-direction: column;
         width: 100%;
     }
-
     .hero .content {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-
-    .hero .content img {
+    .hero .content .logo{
+        width: 100%;
+    }
+    .hero .content .logo .logoCanal3{
         width: 90%;
     }
+    .hero .content .logo .start {
+        width: 50%;
+    }
+    .hero .content .video{
+        width: 100%;
 
-    .hero .content .video p {
-        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero .content .video img{
+        width: 70%;
+    }
+    .hero .content .video p{
+        width: 60%;
+        font-size: 1.2rem;
+        font-family: Kanit, sans-serif;
+        font-weight: bold;
+
+        text-transform: uppercase;
         color: #fff;
     }
 
@@ -385,7 +403,7 @@ footer div p{
         align-items: center;
     }
     .garantir .garantirContent .content .contentText img{
-        width: 70%;
+        width: 80%;
         margin: 30px;
     }
     /* quem somos */
@@ -409,6 +427,9 @@ footer div p{
     /* atrações */
     .parteBaixo .atracoes {
         height: 50px;
+    }
+    .parteBaixo .atracoes img{
+        width: 65%;
     }
     .parteBaixo {
         background-size: cover;
