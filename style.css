@@ -463,10 +463,13 @@ footer div p{
 
     /* Carrosel */ 
     .parteBaixo .carrosel .carousel{
-        width: 500px; 
+        width: 550px; 
+    }
+    .parteBaixo .carrosel .carousel .espaco{
+        display: none;
     }
     .parteBaixo .carrosel .carousel div img{
-        width: 95%;
+        width: 93%;
     }
     .carrosel {
         margin-bottom: 20px;
