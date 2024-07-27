@@ -157,7 +157,7 @@ html {
     position: relative;
 }
 
-/* .parteBaixo .aviao {
+.parteBaixo .aviao {
     width: 100%;
     height: 50px;
 
@@ -171,7 +171,7 @@ html {
     width: 18%;
     margin-top: -19%;
     position: absolute;
-} */
+}
 
 .parteBaixo .atracoes img {
     width: 30%;
@@ -219,7 +219,7 @@ html {
     font-size: 1.1rem;
 }
 
-.dropbtn {
+/* .dropbtn {
     background: none;
     color: white;
     font-family: Kanit, sans-serif;
@@ -229,48 +229,39 @@ html {
     display: block;
   }
   
-  /* The container <div> - needed to position the dropdown content */
   .dropdown {
     width: 40%;
     height: 100%;
     position: relative;
   }
-  
-  /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+  .dropdown-content p {
+    color: #fff;
     display: block;
+    width: 100%;
   }
   
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #f1f1f1}
   
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
-  /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
-  }
+  }  */
 
 /* Carrosel */
 .carrosel {
     width: 100%;
 
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 .carousel {
@@ -334,14 +325,13 @@ html {
     }
     .parteBaixo .restam .desconto p{
         width: 50%;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
 /* APOIO */
 
 footer{
     width: 100%;
-    height: 100px;
 
     background-color: #250d2a;
     border-top: #fff 1px solid;
@@ -355,7 +345,7 @@ footer{
     justify-content: space-between;
 }
 footer img{
-    width: 20%;
+    width: 15%;
     margin-left: 10px;
 }
 footer p{
