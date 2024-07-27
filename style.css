@@ -413,6 +413,13 @@ footer div p{
         color: #fff;
     }
 
+
+    .parteBaixo .querSaber .faq {
+        width: 90%;
+    }
+
+
+
     /* Garantir */
     .garantirContent .sai{
         display: none;
