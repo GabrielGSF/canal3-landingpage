@@ -264,6 +264,9 @@ html {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+.parteBaixo .carrosel .carousel div img{
+    width: 98%;
+}
 .carousel {
     height: 100%;
     margin: 0 auto;
