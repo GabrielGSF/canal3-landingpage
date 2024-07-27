@@ -211,7 +211,7 @@ html {
     width: 40%;
 }
 
-.parteBaixo .querSaber p {
+.parteBaixo .querSaber .faq {
     width: 40%;
 
     color: #fff;
@@ -263,6 +263,9 @@ html {
 
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+.parteBaixo .carrosel .carousel div img{
+    width: 98%;
 }
 .carousel {
     height: 100%;
@@ -336,6 +339,7 @@ html {
 footer{
     width: 100%;
 
+
     background-color: #250d2a;
     border-top: #fff 1px solid;
 
@@ -350,6 +354,7 @@ footer{
 footer img{
     width: 15%;
     margin-left: 10px;
+    margin-top: 10px;
 }
 footer p{
     text-align: center;
@@ -412,6 +417,13 @@ footer div p{
         text-transform: uppercase;
         color: #fff;
     }
+
+
+    .parteBaixo .querSaber .faq {
+        width: 90%;
+    }
+
+
 
     /* Garantir */
     .garantirContent .sai{
@@ -498,9 +510,9 @@ footer div p{
     }
 
     /* Carrosel */ 
-    .parteBaixo .carrosel .carousel{
+    /* .parteBaixo .carrosel .carousel{
         width: 550px; 
-    }
+    } */
     .parteBaixo .carrosel .carousel .espaco{
         display: none;
     }
@@ -524,5 +536,6 @@ footer div p{
     /* footer */
     footer{
         font-size: 0.5rem;
+        height: 45px;
     }
 }
