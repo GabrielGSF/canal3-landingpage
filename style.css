@@ -211,7 +211,7 @@ html {
     width: 40%;
 }
 
-.parteBaixo .querSaber p {
+.parteBaixo .querSaber .faq {
     width: 40%;
 
     color: #fff;
@@ -334,6 +334,7 @@ html {
 footer{
     width: 100%;
 
+
     background-color: #250d2a;
     border-top: #fff 1px solid;
 
@@ -348,6 +349,7 @@ footer{
 footer img{
     width: 15%;
     margin-left: 10px;
+    margin-top: 10px;
 }
 footer p{
     text-align: center;
@@ -522,5 +524,6 @@ footer div p{
     /* footer */
     footer{
         font-size: 0.5rem;
+        height: 45px;
     }
 }
