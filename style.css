@@ -140,7 +140,7 @@ html {
 .parteBaixo {
     width: 100%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 
     background-image: url(assets/06\ -\ Background01.png);
     background-size: cover;
@@ -163,7 +163,7 @@ html {
     position: relative;
 }
 
-.parteBaixo .aviao {
+/* .parteBaixo .aviao {
     width: 100%;
     height: 50px;
 
@@ -177,7 +177,7 @@ html {
     width: 18%;
     margin-top: -19%;
     position: absolute;
-}
+} */
 
 .parteBaixo .atracoes img {
     width: 30%;
@@ -245,16 +245,16 @@ html {
 
     }
     .parteBaixo .barra{
-        width: 80%;
+        width: 95%;
 
         display: flex;
         justify-content: center;
         font-family: Kanit, sans-serif;
 
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .parteBaixo .restam .cronometro{
-        width: 75%;
+        width: 70%;
         background-color: #ffffff;
         color: #250d2a;
         border-radius: 100px 0px 0px 100px;
@@ -264,8 +264,9 @@ html {
         justify-content: space-around;
     }
     .parteBaixo .restam .cronometro p{
+        height: auto;
         color: #250d2a;
-        font-size: 0.4rem;
+        font-size: 0.5rem;
 
         display: flex;
         flex-direction: column;
@@ -274,13 +275,15 @@ html {
 
     }
     .parteBaixo .restam .cronometro p span{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: bold;
     }
     .parteBaixo .restam .desconto{
-        width: 25%;
+        width: 30%;
         background-color: #d34a78;
         color: #fff;
         border-radius: 0px 100px 100px 0px;
+        padding-left: 5px;
 
         display: flex;
         align-items: center;
@@ -355,6 +358,36 @@ footer div p{
         color: #fff;
     }
 
+    /* Garantir */
+    .garantirContent .sai{
+        display: none;
+    }
+    .garantir{
+        width: 100%;
+        height: auto;
+
+        background-image: url(assets/arcadeopa.png);
+        background-size: cover;
+    }
+    .garantir .garantirContent{
+        width: 100%;
+    }
+    .garantir .garantirContent .content{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+    .garantir .garantirContent .content .contentText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .garantir .garantirContent .content .contentText img{
+        width: 70%;
+        margin: 30px;
+    }
     /* quem somos */
     .quemSomos {
         width: 100%;
@@ -390,8 +423,8 @@ footer div p{
         flex-direction: column;
         align-items: center;
 
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .parteBaixo .querSaber img {

@@ -25,10 +25,3 @@ function countDown() {
     document.getElementById('minutes').innerText = Math.floor(diff % hour / minute);
     document.getElementById('seconds').innerText = Math.floor(diff % minute / second);
 }
-
-function resetCountdown() {
-    clearInterval(x);
-    let date_end = document.form_main.date_end.value;
-    count_down = new Date(`${date_end} 00:00:00`).getTime();
-    x = setInterval(() => countDown(), second);
-}
