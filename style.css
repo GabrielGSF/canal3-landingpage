@@ -323,8 +323,10 @@ html {
 
         display: flex;
         align-items: center;
+        justify-content: center;
+        text-align: center;
     }
-    .parteBaixo .restam .desconto p{
+    .parteBaixo .restam .desconto h3{
         width: 50%;
         font-size: 1.4rem;
     }
