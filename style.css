@@ -157,7 +157,7 @@ html {
     position: relative;
 }
 
-.parteBaixo .aviao {
+/* .parteBaixo .aviao {
     width: 100%;
     height: 50px;
 
@@ -171,7 +171,7 @@ html {
     width: 18%;
     margin-top: -19%;
     position: absolute;
-}
+} */
 
 .parteBaixo .atracoes img {
     width: 30%;
@@ -289,8 +289,7 @@ html {
         margin-top: 3rem;
     }
     .parteBaixo .barra{
-        width: 90%;
-
+        width: 95%;
 
         display: flex;
         justify-content: center;
@@ -299,7 +298,7 @@ html {
         /* margin-top: 3rem; */
     }
     .parteBaixo .restam .cronometro{
-        width: 75%;
+        width: 70%;
         background-color: #ffffff;
         color: #250d2a;
         border-radius: 100px 0px 0px 100px;
@@ -309,6 +308,7 @@ html {
         justify-content: space-around;
     }
     .parteBaixo .restam .cronometro p{
+        height: auto;
         color: #250d2a;
         font-size: 1.2rem;
 
@@ -319,13 +319,15 @@ html {
 
     }
     .parteBaixo .restam .cronometro p span{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: bold;
     }
     .parteBaixo .restam .desconto{
-        width: 25%;
+        width: 30%;
         background-color: #d34a78;
         color: #fff;
         border-radius: 0px 100px 100px 0px;
+        padding-left: 5px;
 
         display: flex;
         align-items: center;
@@ -384,22 +386,70 @@ footer div p{
         flex-direction: column;
         width: 100%;
     }
-
     .hero .content {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-
-    .hero .content img {
+    .hero .content .logo{
+        width: 100%;
+    }
+    .hero .content .logo .logoCanal3{
         width: 90%;
     }
+    .hero .content .logo .start {
+        width: 50%;
+    }
+    .hero .content .video{
+        width: 100%;
 
-    .hero .content .video p {
-        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero .content .video img{
+        width: 70%;
+    }
+    .hero .content .video p{
+        width: 60%;
+        font-size: 1.2rem;
+        font-family: Kanit, sans-serif;
+        font-weight: bold;
+
+        text-transform: uppercase;
         color: #fff;
     }
 
+    /* Garantir */
+    .garantirContent .sai{
+        display: none;
+    }
+    .garantir{
+        width: 100%;
+        height: auto;
+
+        background-image: url(assets/arcadeopa.png);
+        background-size: cover;
+    }
+    .garantir .garantirContent{
+        width: 100%;
+    }
+    .garantir .garantirContent .content{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+    .garantir .garantirContent .content .contentText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .garantir .garantirContent .content .contentText img{
+        width: 80%;
+        margin: 30px;
+    }
     /* quem somos */
     .quemSomos {
         width: 100%;
@@ -422,6 +472,9 @@ footer div p{
     .parteBaixo .atracoes {
         height: 50px;
     }
+    .parteBaixo .atracoes img{
+        width: 65%;
+    }
     .parteBaixo {
         background-size: cover;
     }
@@ -435,8 +488,8 @@ footer div p{
         flex-direction: column;
         align-items: center;
 
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .parteBaixo .querSaber img {
