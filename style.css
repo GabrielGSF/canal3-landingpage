@@ -344,9 +344,10 @@ footer div p{
 }
 
 @media screen and (max-width: 480px) {
-    video {
-        width: 350px;
-        margin-top: 3rem;
+    iframe {
+        margin-top: 2rem;
+        width: 80%;
+        height: 40%;
     }
     .hero {
         display: flex;
