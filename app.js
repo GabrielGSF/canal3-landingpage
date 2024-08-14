@@ -75,3 +75,6 @@ function setupCarousel(carouselId) {
 // Inicialize os carrosséis
 setupCarousel('carousel1');
 setupCarousel('carousel2');
+
+
+

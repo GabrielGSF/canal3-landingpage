@@ -59,12 +59,21 @@ html {
     justify-content: left;
 
 }
-
 .hero .aliens img {
     position: absolute;
-    width: 12%;
+    width: 20%;
     z-index: 1;
-    margin-top: -70px;
+    margin-top: -100px;
+}
+
+.cometa {
+    position: absolute;    /* Posiciona em relação ao contêiner pai */
+    top: 170%;              /* Centraliza verticalmente na tela */
+    right: -50px;          /* Move a imagem parcialmente para fora da tela à direita */
+    transform: translateY(-50%); /* Centraliza no eixo Y */
+    height: 300px;         /* Define a altura da imagem, ajuste conforme necessário */
+    object-fit: cover;
+    clip-path: inset(0 50px 0 0);
 }
 
 /* Seção Garantir Ingressos */
@@ -204,6 +213,7 @@ html {
     width: 100%; /* Ajuste conforme necessário */
     overflow: hidden; /* Oculta os cards que estão fora da área visível */
     cursor: grab; /* Muda o cursor para indicar que o carrossel pode ser arrastado */
+    /* z-index: 2; */
 }
 
 .carousel-track {
@@ -247,11 +257,15 @@ html {
 .convidados .carousel-track {
     max-height: 100%;
 }
+.convidados .card {
+    width: 17%;
+    margin: 0;
+}
 .convidados .card img {
     width: 60%;
 }
 .convidados a {
-    width: 15%;
+    width: 20%;
 }
 .convidados .garantaJa {
     width: 100%;
@@ -260,34 +274,61 @@ html {
 /* Seção Saiba Mais */
 .saibaMais {
     width: 100%;
-    height: 90vh;
+    height: auto;
 
-    background-image: url(assets2/fundo\ 1\ PC.png);
+    background-image: url('./assets2/fundo\ 2\ PC.png');
     background-size: cover;
 
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+.saibaMais .title {
+    margin-top: 2rem;
+    max-width: 600px;
+    text-align: center;
+}
+.saibaMais .title h1 {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+    color: white;
+    line-height: 50px;
+}
+.saibaMais .flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens ocupem várias linhas */
+    gap: 10px; /* Espaçamento entre as imagens */
+    max-width: 600px; /* Largura máxima para o flexbox */
+    margin: 2rem 0 auto 0; /* Centraliza o flexbox na página */
+}
+.saibaMais .flex-container img {
+    width: calc(50% - 5px); /* Faz cada imagem ocupar metade da linha, considerando o espaçamento */
+    height: auto; /* Mantém a proporção da imagem */
+}
 .saibaMais .querSaber {
     width: 100%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: left;
-    /* align-items: center; */
+    align-items: center;
 
     margin-top: 3rem;
     margin-bottom: 50px;
 }
 
-.saibaMais .querSaber img {
-    width: 37%;
+.saibaMais .querSaber .imgConteiner {
+    width: 30%;
+    margin-right: 1rem;
+}
+.saibaMais .querSaber .imgConteiner img{
+    width: 100%;
 }
 .saibaMais .querSaber .faq {
-    width: 40%;
+    width: 35%;
     color: #fff;
     font-family: Kanit, sans-serif;
+    margin-left: 1rem;
 }
 .saibaMais .querSaber .faq h3{
     margin-top: 1rem;
@@ -344,10 +385,16 @@ footer div p{
 
 @media screen and (max-width: 480px) {
     /* Home */
+    body {
+        overflow-x: hidden;
+    }
     iframe {
         margin-top: 2rem;
         width: 80%;
         height: 25%;
+    }
+    .cometa {
+        clip-path: inset(0 50px 0 0);
     }
     .hero {
         display: flex;
@@ -431,90 +478,64 @@ footer div p{
         width: 100%;
     }
 
-    /* quem somos */
-    .quemSomos {
-        width: 100%;
-        height: 100vh;
+    /* Seção Atrações */
+    .atracoes {
+        height: 50vh;
     }
-
-    .quemSomos .quemSomosContent {
-        width: 95%;
-        height: auto;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .quemSomos .quemSomosContent .contentText {
-        width: 90%;
-        height: auto;
-    }
-
-    /* atrações */
-    .parteBaixo .atracoes {
-        height: 50px;
-    }
-    .parteBaixo .atracoes img{
+    .atracoes .card {
         width: 60%;
-
-        position: absolute;
-        margin-top: -4%
-    }
-    .parteBaixo {
-        background-size: contain 100%;
-        background-repeat: no-repeat;
-    }
-    .parteBaixo a{
-        width: 70%;
     }
 
-    /* Quer saber */
-    .parteBaixo .querSaber {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        margin-top: 50px;
-        margin-bottom: 50px;
+    /* Seção Convidados  */
+    .convidados {
+        height: 50vh;
     }
-
-    .parteBaixo .querSaber img {
-        width: 70%;
-        margin-bottom: 15px;
+    .convidados .card {
+        width: 50%;
+        margin: 0;
     }
-
-    .parteBaixo .querSaber p {
-        width: 90%;
-        margin-top: 5px;
+    .convidados a {
+        width: 30%;
     }
-
-    /* Carrosel */ 
-    /* .parteBaixo .carrosel .carousel{
-        width: 550px; 
-    } */
-    .parteBaixo .carrosel .carousel .espaco{
-        display: none;
+    /* Contador */
+    .restam {
+        margin-top: -1.5rem;
     }
-    .parteBaixo .carrosel .carousel div img{
-        width: 93%;
+    .restam .barra {
+        width: 80%;
     }
-    .carrosel {
-        margin-bottom: 20px;
-    }
-
-    .parteBaixo .restam .barra .cronometro{
+    .restam .barra .cronometro{
         width: 100%;
     }
-    .parteBaixo .restam .barra .cronometro p{
+    .restam .barra .cronometro p{
         font-size: 1rem;
     }
-    .parteBaixo .restam .barra .cronometro h3{
+    .restam .barra .cronometro h3{
         font-size: 1rem;
     }
-    .parteBaixo .restam .barra .cronometro p span{
+    .restam .barra .cronometro p span{
         font-size: 1.1rem;
     }
-    .parteBaixo .restam .desconto {
+    .restam .desconto {
         padding-left: 1px;
+    }
+
+    /* Seção Saiba Mais */
+    .saibaMais .title h1 {
+        font-size: 1.2rem;
+    }
+    .saibaMais .flex-container {
+        max-width: 300px;
+    }
+
+    .saibaMais .querSaber {
+        display: flex;
+        justify-content: center; /* Alinha horizontalmente */
+        align-items: center; /* Alinha verticalmente */
+        flex-direction: column;
+    }
+    .saibaMais .querSaber  .faq{
+        width: 90%;
     }
     /* footer */
     footer{
