@@ -21,8 +21,8 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url('./assets/01\ -\ Background.png');
-    background-size: 100% 100%;
+    background-image: url('./assets2/fundo\ 2\ PC.png');
+    background-size: cover;
 }
 
 .hero .content {
@@ -42,25 +42,14 @@ html {
 .hero .content .logo .logoCanal3 {
     width: 70%;
 }
+.hero .content .logo .data {
+    width: 70%;
+}
 .hero .content .logo .start {
     width: 30%;
 }
-
-.hero .content .video {
-    /* background-color: palevioletred; */
-    width: 50%;
-    /* height: 75%; */
-    display: block;
-    align-items: center;
-    text-align: center;
-}
-
-.hero .content .video img {
-    width: 70%;
-}
-.hero .content .video p {
-    font-size: 3rem;
-    color: #fff;
+.hero .content .onlyMob {
+    display: none;
 }
 
 .hero .aliens {
@@ -81,11 +70,13 @@ html {
 /* Seção Garantir Ingressos */
 .garantir {
     width: 100%;
-    height: 65vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 1rem;
+    background-image: url(./assets2/17\ -\ fundo\ pacman.png);
+    background-size: cover 100%;
+    background-repeat: no-repeat;
 }
 .garantir .garantirContent {
     width: 90%;
@@ -96,7 +87,7 @@ html {
     z-index: 1;
 }
 .garantir .garantirContent img {
-    width: 25%;
+    width: 40%;
 }
 .garantir .garantirContent .content {
     width: 50%;
@@ -107,7 +98,7 @@ html {
     flex-direction: column;
 }
 .garantir .garantirContent .content img {
-    width: 50%;
+    width: 80%;
 }
 .garantir .garantirContent .content .contentText {
     display: flex;
@@ -122,21 +113,19 @@ html {
     width: 100%;
 }
 .garantir .garantirContent .content .contentText p {
-    width: 85%;
-    margin-top: 10px;
+    width: 80%;
     font-family: 'kanit', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffff;
 }
 
-/* Parte atrações parabaixo */
-
-.parteBaixo {
+/* Seçaõ Carrosel de Atrações */
+.atracoes {
     width: 100%;
-    height: auto;
-    margin-top: 1.5rem;
+    height: 90vh;
 
-    background-image: url(assets/06\ -\ Background01.png);
+    background-image: url(assets2/fundo\ 1\ PC.png);
     background-size: cover;
 
     display: flex;
@@ -144,20 +133,7 @@ html {
     flex-direction: column;
 }
 
-/* ATRAÇÕES */
-
-.parteBaixo .atracoes {
-    width: 100%;
-    height: auto;
-
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-
-    position: relative;
-}
-
-.parteBaixo .aviao {
+.atracoes .aviao {
     width: 100%;
     height: 50px;
 
@@ -167,35 +143,133 @@ html {
     position: relative;
 }
 
-.parteBaixo .aviao img {
+.atracoes .aviao img {
     width: 18%;
     margin-top: -19%;
     position: absolute;
 }
+/*Cronometro*/
+.restam{
+    width: 100%;
 
-.parteBaixo .atracoes img {
-    width: 30%;
+    display: flex;
+    justify-content: center;
 
-    position: absolute;
-    margin-top: -2%
+    margin-top:-2rem;
 }
+.barra{
+    width: 60%;
 
-/* garanta seus ingressor */
-.parteBaixo a {
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-family: Kanit, sans-serif;
+
+    /* margin-top: 3rem; */
+}
+.restam .cronometro{
+    width: 70%;
+    background-color: #ffffff;
+    color: #250d2a;
+    border-radius: 100px 100px 100px 100px;
+        
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
-.parteBaixo a img {
+.restam .cronometro p{
+    line-height: auto;
+    color: rgb(128, 0, 0);
+    font-size: 1rem;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.restam .cronometro span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #250d2a;
+}
+.restam .cronometro h3 {
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+/* Carousel */
+.carousel-container {
+    margin-top: 1rem;
+    width: 100%; /* Ajuste conforme necessário */
+    overflow: hidden; /* Oculta os cards que estão fora da área visível */
+    cursor: grab; /* Muda o cursor para indicar que o carrossel pode ser arrastado */
+}
+
+.carousel-track {
+    display: flex;
+    overflow: hidden; /* Garante que os cards fora da vista não apareçam */
+    transition: transform 0.3s ease; /* Suaviza o movimento */
+}
+
+.card {
+    width: 20%;
+    /* min-width: 10px; Largura dos cards */
+    margin: 0 10px; /* Espaçamento entre os cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0; /* Evita que os cards se encolham */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    user-select: none; /* Impede que a imagem seja selecionada */
+}
+
+/* Seção Carrousel Convidados */
+.convidados {
+    width: 100%;
+    height: 90vh;
+
+    background-image: url(./assets2/17\ -\ fundo\ pacman.png);
+    background-size: cover 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.convidados .carousel-container {
+    height: 75%;
+}
+.convidados .carousel-track {
+    max-height: 100%;
+}
+.convidados .card img {
+    width: 60%;
+}
+.convidados a {
+    width: 15%;
+}
+.convidados .garantaJa {
     width: 100%;
 }
 
-.parteBaixo img {
-    width: 65%;
-}
+/* Seção Saiba Mais */
+.saibaMais {
+    width: 100%;
+    height: 90vh;
 
-/* quer saber  */
-.parteBaixo .querSaber {
+    background-image: url(assets2/fundo\ 1\ PC.png);
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.saibaMais .querSaber {
     width: 100%;
 
     display: flex;
@@ -207,98 +281,23 @@ html {
     margin-bottom: 50px;
 }
 
-.parteBaixo .querSaber img {
+.saibaMais .querSaber img {
     width: 37%;
 }
-.parteBaixo .querSaber .faq {
+.saibaMais .querSaber .faq {
     width: 40%;
     color: #fff;
     font-family: Kanit, sans-serif;
 }
-.parteBaixo .querSaber .faq h3{
+.saibaMais .querSaber .faq h3{
     margin-top: 1rem;
     font-size: 1.2rem;
 }
-.parteBaixo .querSaber .faq p {
+.saibaMais .querSaber .faq p {
     color: #fff;
     font-family: Kanit, sans-serif;
     font-size: 1rem;
 }
-
-/* Carrosel */
-.carrosel {
-    width: 100%;
-
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-.parteBaixo .carrosel .carousel div img{
-    width: 70%;
-}
-.carousel {
-    height: 100%;
-    margin: 0 auto;
-}
-    /*Cronometro*/
-    .parteBaixo .restam{
-        width: 100%;
-
-        display: flex;
-        justify-content: center;
-
-        margin-top: 3rem;
-    }
-    .parteBaixo .barra{
-        width: 95%;
-
-        display: flex;
-        justify-content: center;
-        font-family: Kanit, sans-serif;
-
-        /* margin-top: 3rem; */
-    }
-    .parteBaixo .restam .cronometro{
-        width: 70%;
-        background-color: #ffffff;
-        color: #250d2a;
-        border-radius: 100px 0px 0px 100px;
-        
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .parteBaixo .restam .cronometro p{
-        height: auto;
-        color: #250d2a;
-        font-size: 1.2rem;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-    .parteBaixo .restam .cronometro p span{
-        font-size: 1.6rem;
-        font-weight: bold;
-    }
-    .parteBaixo .restam .desconto{
-        width: 20%;
-        background-color: #d34a78;
-        color: #fff;
-        border-radius: 0px 100px 100px 0px;
-        padding-left: 5px;
-        font-size: 1.2rem;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .parteBaixo .restam .desconto h3{
-        width: 50%;
-        font-size: 1.4rem;
-    }
 
 /* APOIO */
 
@@ -344,16 +343,19 @@ footer div p{
 }
 
 @media screen and (max-width: 480px) {
+    /* Home */
     iframe {
         margin-top: 2rem;
         width: 80%;
-        height: 40%;
+        height: 25%;
     }
     .hero {
         display: flex;
         justify-content: center;
         flex-direction: column;
         width: 100%;
+        background-image: url('./assets2/fundo\ 2.png');
+        background-size: contain 100%;
     }
     .hero .content {
         display: flex;
@@ -368,22 +370,35 @@ footer div p{
         width: 90%;
     }
     .hero .content .logo .start {
+        display: none;
         width: 50%;
     }
+    .hero .content .onlyMob {
+        margin-top: 3rem;
+        display: block;
+        align-items: center;
+        text-align: center;
+
+    }
+    .hero .content .onlyMob .start2 {
+        width: 50%;
+    }
+
+    
     .parteBaixo .querSaber .faq {
         width: 90%;
     }
 
-    /* Garantir */
+    /* Garantir Ingressos*/
     .garantirContent .sai{
         display: none;
     }
     .garantir{
         width: 100%;
-        height: auto;
+        height: 50vh;
 
-        background-image: url(assets/arcadeopa.png);
-        background-size: contain;
+        background-image: url('./assets2/17\ -\ fundo\ pacman.png');
+        background-size: 100% 100%;
         background-repeat: no-repeat;
     }
     .garantir .garantirContent{
@@ -403,6 +418,11 @@ footer div p{
         flex-direction: column;
         align-items: center;
     }
+    .garantir .garantirContent .content .contentText p{
+        margin: 1rem;
+        width: 90%;
+        font-size: 1.4rem;
+    }
     .garantir .garantirContent .content .contentText a{
         margin-top: 1rem;
         width: 40%;
@@ -410,6 +430,7 @@ footer div p{
     .garantir .garantirContent .content .contentText img{
         width: 100%;
     }
+
     /* quem somos */
     .quemSomos {
         width: 100%;
@@ -495,16 +516,6 @@ footer div p{
     .parteBaixo .restam .desconto {
         padding-left: 1px;
     }
-    /* .card {
-        width: 70;
-        height: 370px;
-    } */
-
-    /* #espaco {
-        width: 50px;
-        background-color: rgba(240, 248, 255, 0);
-    } */
-
     /* footer */
     footer{
         font-size: 0.5rem;
