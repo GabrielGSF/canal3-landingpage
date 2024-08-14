@@ -383,7 +383,7 @@ footer div p{
     font-size: 0.5rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
     /* Home */
     body {
         overflow-x: hidden;
@@ -401,6 +401,7 @@ footer div p{
         justify-content: center;
         flex-direction: column;
         width: 100%;
+        height: auto;
         background-image: url('./assets2/fundo\ 2.png');
         background-size: contain 100%;
     }
@@ -493,7 +494,7 @@ footer div p{
 
     /* Seção Convidados  */
     .convidados {
-        height: 50vh;
+        height: auto;
     }
     .convidados .card {
         width: 50%;
@@ -501,6 +502,7 @@ footer div p{
     }
     .convidados a {
         width: 40%;
+        margin-bottom: 10px;
     }
 
     /* Contador */
