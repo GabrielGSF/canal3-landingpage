@@ -84,7 +84,7 @@ html {
     align-items: center;
     flex-direction: column;
     background-image: url(./assets2/17\ -\ fundo\ pacman.png);
-    background-size: cover 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .garantir .garantirContent {
@@ -122,9 +122,9 @@ html {
     width: 100%;
 }
 .garantir .garantirContent .content .contentText p {
-    width: 80%;
+    width: 90%;
     font-family: 'kanit', Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
     color: #ffffff;
 }
