@@ -301,9 +301,12 @@ html {
     max-width: 600px; /* Largura máxima para o flexbox */
     margin: 2rem 0 auto 0; /* Centraliza o flexbox na página */
 }
-.saibaMais .flex-container img {
+.saibaMais .flex-container a {
     width: calc(50% - 5px); /* Faz cada imagem ocupar metade da linha, considerando o espaçamento */
     height: auto; /* Mantém a proporção da imagem */
+}
+.saibaMais .flex-container img {
+    width: 100%;
 }
 .saibaMais .querSaber {
     width: 100%;
