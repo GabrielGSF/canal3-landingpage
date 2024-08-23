@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -30,7 +30,8 @@
                     (min-width: 560px) calc(38.93vw - 114px), 
                     70vw
                     "
-                    class="data" src="./assets2/data/10-data.png" 
+                    class="data" 
+                    src="./assets2/data/10-data.png" 
                     alt="Image com a Data do Evento do Canal3: 2 a 4 Novembro">
  
                 <img class="logoCanal3" src="./assets2/10 - Canal3.png" alt="logo1">                    
@@ -81,25 +82,95 @@
         <div class="carousel-container" id="carousel1">
             <div class="carousel-track">
                 <div class="card">
-                    <img src="./assets2/18 - cards - cosplay.png" alt="Imagem 1">
+                    <!-- 256×378, 544×803, 820×1210, 1030×1520, 1200×1771 -->
+                    <img
+                        srcset="
+                        ./assets2/carousel/cosplay/18-cards-cosplay2-w256.png 256w,
+                        ./assets2/carousel/cosplay/18-cards-cosplay2-w544.png 544w,                        ./assets2/carousel/10-data-w1500.png 1500w,
+                        ./assets2/carousel/cosplay/18-cards-cosplay2-w820.png 820w,
+                        ./assets2/carousel/cosplay/18-cards-cosplay2-w1030.png 1030w,
+                        ./assets2/carousel/cosplay/18-cards-cosplay2-w1200.png 1200w,                        "
+                        sizes="(min-width: 560px) 20vw, 60vw"
+                        src="./assets2/carousel/cosplay/18-cards-cosplay2.png" 
+                        alt="Imagem 1">
                 </div>
                 <div class="card">
-                    <img src="./assets2/18 - cards - exposições.png" alt="Imagem 2">
+                    <!-- 256×378, 544×803, 820×1210, 1030×1520, 1200×1771 -->
+                    <img
+                        srcset="
+                        ./assets2/carousel/exposicoes/18-cards-exposições2-w256.png 256w,
+                        ./assets2/carousel/exposicoes/18-cards-exposições2-w544.png 544w,                        ./assets2/carousel/10-data-w1500.png 1500w,
+                        ./assets2/carousel/exposicoes/18-cards-exposições2-w820.png 820w,
+                        ./assets2/carousel/exposicoes/18-cards-exposições2-w1030.png 1030w,
+                        ./assets2/carousel/exposicoes/18-cards-exposições2-w1200.png 1200w,                        "
+                        sizes="(min-width: 560px) 20vw, 60vw"
+                        src="./assets2/carousel/exposicoes/18-cards-exposições2.png" 
+                        alt="Imagem 2">
                 </div>
                 <div class="card">
-                    <img src="./assets2/18 - cards - games.png" alt="Imagem 3">
+                    <!-- 256×378, 544×803, 820×1210, 1030×1520, 1200×1771 -->
+                    <img
+                        srcset="
+                        ./assets2/carousel/games/18-cards-games2-w256.png 256w,
+                        ./assets2/carousel/games/18-cards-games2-w544.png 544w,                        ./assets2/carousel/10-data-w1500.png 1500w,
+                        ./assets2/carousel/games/18-cards-games2-w820.png 820w,
+                        ./assets2/carousel/games/18-cards-games2-w1030.png 1030w,
+                        ./assets2/carousel/games/18-cards-games2-w1200.png 1200w,                        "
+                        sizes="(min-width: 560px) 20vw, 60vw"
+                        src="./assets2/carousel/games/18-cards-games2.png" 
+                        alt="Imagem 3">
                 </div>
                 <div class="card">
-                    <img src="./assets2/18 - cards - mercado.png" alt="Imagem 3">
+                    <!-- 256×74, 1430×415, 2000×580 -->
+                    <img
+                        srcset="
+                        ./assets2/carousel/mercado/18-cards-mercado2-w256.png 256w,
+                        ./assets2/carousel/mercado/18-cards-mercado2-w544.png 544w,                        ./assets2/carousel/10-data-w1500.png 1500w,
+                        ./assets2/carousel/mercado/18-cards-mercado2-w820.png 820w,
+                        ./assets2/carousel/mercado/18-cards-mercado2-w1030.png 1030w,
+                        ./assets2/carousel/mercado/18-cards-mercado2-w1200.png 1200w,                        "
+                        sizes="(min-width: 560px) 20vw, 60vw" 
+                        src="./assets2/carousel/mercado/18-cards-mercado2.png" 
+                        alt="Imagem 3">
                 </div>
                 <div class="card">
-                    <img src="./assets2/18 - cards - palestras.png" alt="Imagem 3">
+                    <!-- 256×74, 1430×415, 2000×580 -->
+                    <img
+                        srcset="
+                        ./assets2/carousel/palestras/18-cards-palestras2-w256.png 256w,
+                        ./assets2/carousel/palestras/18-cards-palestras2-w544.png 544w,                        ./assets2/carousel/10-data-w1500.png 1500w,
+                        ./assets2/carousel/palestras/18-cards-palestras2-w820.png 820w,
+                        ./assets2/carousel/palestras/18-cards-palestras2-w1030.png 1030w,
+                        ./assets2/carousel/palestras/18-cards-palestras2-w1200.png 1200w,                        "
+                        sizes="(min-width: 560px) 20vw, 60vw"
+                        src="./assets2/carousel/palestras/18-cards-palestras.png" 
+                        alt="Imagem 3">
                 </div>
                 <div class="card">
-                    <img src="./assets2/18 - cards - shows.png" alt="Imagem 3">
+                    <!-- 256×74, 1430×415, 2000×580 -->
+                    <img
+                        srcset="
+                        ./assets2/carousel/shows/18-cards-shows2-w256.png 256w,
+                        ./assets2/carousel/shows/18-cards-shows2-w544.png 544w,                        ./assets2/carousel/10-data-w1500.png 1500w,
+                        ./assets2/carousel/shows/18-cards-shows2-w820.png 820w,
+                        ./assets2/carousel/shows/18-cards-shows2-w1030.png 1030w,
+                        ./assets2/carousel/shows/18-cards-shows2-w1200.png 1200w,                        "
+                        sizes="(min-width: 560px) 20vw, 60vw" 
+                        src="./assets2/carousel/shows/18-cards-shows2.png" 
+                        alt="Imagem 3">
                 </div>
                 <div class="card">
-                    <img src="./assets2/18 - cards - torneios.png" alt="Imagem 3">
+                    <!-- 256×74, 1430×415, 2000×580 -->
+                    <img
+                        srcset="
+                        ./assets2/carousel/torneios/18-cards-torneios2-w256.png 256w,
+                        ./assets2/carousel/torneios/18-cards-torneios2-w544.png 544w,                        ./assets2/carousel/10-data-w1500.png 1500w,
+                        ./assets2/carousel/torneios/18-cards-torneios2-w820.png 820w,
+                        ./assets2/carousel/torneios/18-cards-torneios2-w1030.png 1030w,
+                        ./assets2/carousel/torneios/18-cards-torneios2-w1200.png 1200w,                        "
+                        sizes="(min-width: 560px) 20vw, 60vw"
+                        src="./assets2/carousel/torneios/18-cards-torneios2.png" 
+                        alt="Imagem 3">
                 </div>
                 <!-- Adicione mais cards conforme necessário -->
             </div>
@@ -112,15 +183,15 @@
             <!-- 256×171, 960×640, 1330×887, 1620×1080, 1850×1233, 2048×1365 -->
             <img 
                 srcset="
-                ./assets2/evento/evento-w256.png 256w,
-                ./assets2/evento/evento-w960.png 960w,
-                ./assets2/evento/evento-w1330.png 1330w,
-                ./assets2/evento/evento-w1620.png 1620w,
-                ./assets2/evento/evento-w1850.png 1850w,
-                ./assets2/evento/evento-w2048.png 2048w,
+                ./assets2/evento/evento2-w256.jpg 256w,
+                ./assets2/evento/evento2-w960.jpg 960w,
+                ./assets2/evento/evento2-w1330.jpg 1330w,
+                ./assets2/evento/evento2-w1620.jpg 1620w,
+                ./assets2/evento/evento2-w1850.jpg 1850w,
+                ./assets2/evento/evento2-w2048.jpg 2048w,
                 "
                 sizes="35.98vw"
-                src="./assets2/evento/evento.png" 
+                src="./assets2/evento/evento2-.jpg" 
                 alt="Uma imagem do Evento, mostrando os Fliperamas e Pessoas no Evento" 
                 class="sai">
 
@@ -151,7 +222,6 @@
         </div>
         <!-- <img src="./assets2/04 - Nave.png" alt="" class="cometa"> -->
     </section>
-
 
 <!-- 
     <section class="convidados">
@@ -215,8 +285,8 @@
         
         <div class="flex-container">
             <a href="https://docs.google.com/forms/d/19c11GFEgDdrKtp0L6eQIoUqBec8rzbGWD03cYan1EBg/edit"><img src="./assets2/14 - inscrições - imprensa.png" alt="Imagem 1"></a>
+            <a href="https://docs.google.com/forms/d/1OzJVRdEqMvqKIcP9IiNr3hW4CuW0t_5HQ27rYxAvylA/edit"><img src="./assets2/14 - inscrições - influenciador.png" alt="Imagem 3"></a>
             <a href="https://docs.google.com/forms/d/1yPE06Zv1rpDsnhnuJFVKAgLi8WLuW3SDI4cNI1ais0w/edit"><img src="./assets2/14 - inscrições - expositor.png" alt="Imagem 2"></a>
-            <a href="https://docs.google.com/forms/d/1OzJVRdEqMvqKIcP9IiNr3hW4CuW0t_5HQ27rYxAvylA/edit"><img src="./assets2/14 - inscrições - cosplayer.png" alt="Imagem 3"></a>
             <a href="https://docs.google.com/forms/d/11dedWzPYhPnO1ehA8aM1-ivGeUvreW8nySwZcJws_io/edit"><img src="./assets2/14 - inscrições - desenvolverdor.png" alt="Imagem 4"></a>
         </div>
 
@@ -224,7 +294,17 @@
         <div class="querSaber" id="contato">
 
             <div class="imgConteiner">
-                <img src="./assets2/15 - Saiba Mais.png">
+                <!-- 256×139, 942×510, 1440×780, 1800×975 -->
+                <img
+                    srcset="
+                    ./assets2/saiba-mais/15-SaibaMais-w256.png 256w,
+                    ./assets2/saiba-mais/15-SaibaMais-w942.png 942w,
+                    ./assets2/saiba-mais/15-SaibaMais-w1440.png 1440w,
+                    ./assets2/saiba-mais/15-SaibaMais-w1800.png 1800w,
+                    "
+                    sizes="(min-width: 560px) 30vw, 50vw"
+                    src="./assets2/saiba-mais/15-SaibaMais.png"
+                    alt="Imagem escrito Saiba Mais, para algumas perguntas e informações frequentes sobre o evento">
             </div>
             
             <div class="faq">
@@ -243,7 +323,15 @@
     </section>
 
     <footer>
-        <img src="./assets2/logoLaranja.png" >
+        <!-- 256×108, 900×378 -->
+        <img 
+            srcset="
+            ./assets2/logo-laranja/logoLaranja-w256.png 256w,
+            ./assets2/logo-laranja/logoLaranja-w900.png 900w,
+            "
+            sizes="15vw"
+            src="./assets2/logo-laranja/logoLaranja.png"
+            alt="Mini Logo do Canal 3 Expo no rodapé.">
         <div>
             <p>APOIO:</p>
             <img src="./assets2/apaio.png">

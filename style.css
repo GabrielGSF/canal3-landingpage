@@ -213,7 +213,7 @@ html {
     width: 100%; /* Ajuste conforme necessário */
     overflow: hidden; /* Oculta os cards que estão fora da área visível */
     cursor: grab; /* Muda o cursor para indicar que o carrossel pode ser arrastado */
-    /* z-index: 2; */
+    z-index: 2;
 }
 
 .carousel-track {
